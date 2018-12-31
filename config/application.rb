@@ -29,5 +29,12 @@ module BetterSyukatsu
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.generators do |g|
+      g.test_framework :rspec,
+        fixtures: true,
+        view_spec: false,
+        helper_spec: false,
+        routing_specs: false
+    end
   end
 end
