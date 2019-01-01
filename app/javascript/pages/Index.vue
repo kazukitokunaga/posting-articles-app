@@ -3,7 +3,7 @@
   <div class="dashboard-wrapper">
     <main>
       <section>
-        <router-link to="basicinformation/uerprofile">ユーザープロフィール</router-link>
+        <router-link to="basicinformation/userprofile">ユーザープロフィール</router-link>
       </section>
       <section>
         <router-link to="setting">設定</router-link>

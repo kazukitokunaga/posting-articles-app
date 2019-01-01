@@ -1,21 +1,8 @@
 <template>
   <header>
     <div class="header-wrapper">
-      <!-- ドロップダウンメニューを表示する -->
-      <el-dropdown class="dropdown-menu">
-        <div class="site-logo">
-          <img src="" class="logo">
-          <img src="" class="arrow">
-        </div>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item>
-            <router-link to="/">TOP</router-link>
-          </el-dropdown-item>
-          <el-dropdown-item>
-            <a @click="signOut">ログアウト</a>
-          </el-dropdown-item>
-        </el-dropdown-menu>
-      </el-dropdown>
+      <router-link to="/">TOP</router-link>
+      <a rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a>
     </div>
   </header>
 </template>
@@ -23,6 +10,7 @@
 <script>
 import axios from 'axios'
 import Vue from 'vue'
+
 export default {
   data() {
     return {
@@ -33,7 +21,7 @@ export default {
   methods: {
     async signOut(){
       const response = await axios.delete('/users/sign_out')
-      location.href= '/'
+      location.reload()
     }
   }
 }
