@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <top-bar></top-bar>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,7 +9,6 @@
 export default {
   data: function () {
     return {
-      message: "Hello Vue!"
     }
   }
 }
