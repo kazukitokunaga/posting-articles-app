@@ -4,18 +4,25 @@
 // to the head of your layout file,
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
-
+import 'regenerator-runtime/runtime'
 import Vue from 'vue'
 import App from '../app.vue'
+import ElementUI      from 'element-ui'
+import router         from '../routers/router.js'
+import store          from '../store/index.js'
+import TopBar         from 'pages/components/TopBar.vue'
+
+Vue.use(ElementUI)
+Vue.component('TopBar', TopBar)
 
 document.addEventListener('DOMContentLoaded', () => {
   const el = document.body.appendChild(document.createElement('hello'))
   const app = new Vue({
     el,
+    router,
+    store,
     render: h => h(App)
   })
-
-  console.log(app)
 })
 
 

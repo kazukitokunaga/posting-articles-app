@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <p>{{ message }}</p>
+    <top-bar></top-bar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+
+const token = document.getElementsByName("csrf-token")[0].getAttribute("content");
+axios.defaults.headers.common["X-CSRF-Token"] = token;
+
 export default {
   data: function () {
     return {
-      message: "Hello Vue!"
     }
   }
 }
