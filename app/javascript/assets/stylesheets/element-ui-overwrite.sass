@@ -1,0 +1,77 @@
+// ラジオボタン
+.el-radio__inner
+  width: 24px
+  height: 24px
+  border: solid 2px #dbdbdb
+  transition: 0.1s ease-in-out
+  &:hover
+    border: solid 2px #dbdbdb
+  &:active
+    border: solid 4px #dbdbdb
+  &:after
+    width: 12px
+    height: 12px
+    background: #00a6ea
+
+// ラジオボタンの内側の丸
+.el-radio__input.is-checked .el-radio__inner
+  background: #ffffff
+  border-color: #dbdbdb
+  &:hover
+    border: solid 2px #dbdbdb
+
+// ラジオボタンのラベル
+.el-radio__label
+  color: #333333
+  // &:hover+.el-radio__inner
+  //   border: solid 4px #dbdbdb
+.el-radio__input.is-checked+.el-radio__label
+  color: #333333
+
+
+/* フォーム */
+.el-form-item
+  margin-bottom: 12px
+
+.el-form-item__content
+  // width: 480px;
+  margin-left: 0 !important // ラベルをinput上部に持ってくる(インラインスタイル対策のimportant)
+  font-size: 16px
+  font-weight: bold
+  color: #333333
+  display: flex !important // 「円」などの単位をつけるため
+
+.el-input__inner
+  border: solid 1px #dbdbdb
+  border-radius: 8px
+  height: 42px
+  font-size: 16px
+  transition: 0.1s
+  // focus??
+  &:focus
+    border: solid 4px #dbdbdb
+
+.el-form-item__label
+  // padding: 0 20px 0 0 // inputとの距離を調整
+  text-align: left // ラベルをinput上部に持ってくる
+  float: none // ラベルをinput上部に持ってくる
+  color: #333333
+  font-size: 16px
+
+// バリデーション通った時の色変更を削除
+.el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus
+  border-color: #dbdbdb
+
+// バリデーションエラー時の色変更 
+.el-form-item.is-error .el-input__inner, .el-form-item__error
+  border-color: #ff4b4b
+  color: #ff4b4b
+
+/* :inline="true"のCSS */
+// labelをinput上部に持ってくる
+.el-form--inline .el-form-item__content
+  display: block
+
+.el-form--inline .el-form-item
+  margin-right: 5px;
+© 2019 
