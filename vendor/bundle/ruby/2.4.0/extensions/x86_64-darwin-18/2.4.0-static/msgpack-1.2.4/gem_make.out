@@ -1,5 +1,5 @@
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
-/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190101-95920-1gfvnes.rb extconf.rb
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
+/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190102-43594-1eb2hwx.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_str_replace() in ruby.h... yes
@@ -11,10 +11,10 @@ checking for rb_hash_dup() in ruby.h... yes
 checking for rb_hash_clear() in ruby.h... yes
 creating Makefile
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
 make "DESTDIR=" clean
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
 make "DESTDIR="
 compiling buffer.c
 compiling buffer_class.c
@@ -34,6 +34,6 @@ static VALUE Unpacker_peek_next_type(VALUE self)
 compiling unpacker_ext_registry.c
 linking shared-object msgpack/msgpack.bundle
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/msgpack-1.2.4/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20190101-95920-t4n9m/msgpack
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20190102-43594-1dtsg9e/msgpack

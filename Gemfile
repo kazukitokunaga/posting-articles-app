@@ -55,16 +55,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring-commands-rspec'
-  gem "rubocop", require: false
+  gem "rubocop"
   gem "rubocop-rails"
   gem "rubocop-rails_config"
   gem "rubocop-rspec"
 end
-
-group :production do
-  gem 'pg'
-end
-
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -75,7 +70,6 @@ gem "devise-i18n-views"
 gem "redis-rails"
 gem "cancancan"
 gem "rolify"
-gem "seed-fu"
 # gem "omniauth-oauth"
 gem "omniauth-google-oauth2"
 gem "omniauth-facebook"

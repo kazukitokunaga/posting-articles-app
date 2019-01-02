@@ -1,15 +1,15 @@
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
-/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190101-95920-1hitnq4.rb extconf.rb
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190102-43594-q8cckw.rb extconf.rb
 creating Makefile
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" clean
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR="
 compiling cruby.c
 linking shared-object bindex/cruby.bundle
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190101-95920-o0788a/bindex
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20190102-43594-1wuo308/bindex

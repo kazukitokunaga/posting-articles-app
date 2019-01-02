@@ -1,5 +1,5 @@
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
-/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190101-81046-rptg6k.rb extconf.rb
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190102-43594-1fjw3n5.rb extconf.rb
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for port_event_t in poll.h... no
@@ -10,10 +10,10 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
 make "DESTDIR=" clean
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
 make "DESTDIR="
 compiling bytebuffer.c
 compiling monitor.c
@@ -245,6 +245,6 @@ ev_set_allocator (void *(*cb)(void *ptr, long size) EV_THROW) EV_THROW
 compiling selector.c
 linking shared-object nio4r_ext.bundle
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nio4r-2.3.1/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20190101-81046-iiuv0p
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20190102-43594-zrvxk7

@@ -1,5 +1,5 @@
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
-/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190101-81046-feyn6z.rb extconf.rb --use-system-libraries\ --with-xml2-include\=/usr/local/opt/libxml2/include/libxml2
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
+/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190102-43594-1grfqxe.rb extconf.rb --use-system-libraries\ --with-xml2-include\=/usr/local/opt/libxml2/include/libxml2
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using packaged libraries.
@@ -34,13 +34,13 @@ Note, however, that nokogiri is not fully compatible with arbitrary
 versions of libxml2 provided by OS/package vendors.
 ************************************************************************
 Extracting libxml2-2.9.8.tar.gz into tmp/x86_64-apple-darwin18.2.0/ports/libxml2/2.9.8... OK
-Running git apply with /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
-Running git apply with /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/patches/libxml2/0002-Fix-nullptr-deref-with-XPath-logic-ops.patch... OK
-Running git apply with /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/patches/libxml2/0003-Fix-infinite-loop-in-LZMA-decompression.patch... OK
+Running git apply with /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/patches/libxml2/0001-Revert-Do-not-URI-escape-in-server-side-includes.patch... OK
+Running git apply with /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/patches/libxml2/0002-Fix-nullptr-deref-with-XPath-logic-ops.patch... OK
+Running git apply with /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/patches/libxml2/0003-Fix-infinite-loop-in-LZMA-decompression.patch... OK
 Running 'configure' for libxml2 2.9.8... OK
 Running 'compile' for libxml2 2.9.8... OK
 Running 'install' for libxml2 2.9.8... OK
-Activating libxml2 2.9.8 (from /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ports/x86_64-apple-darwin18.2.0/libxml2/2.9.8)...
+Activating libxml2 2.9.8 (from /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ports/x86_64-apple-darwin18.2.0/libxml2/2.9.8)...
 ************************************************************************
 IMPORTANT NOTICE:
 
@@ -64,7 +64,7 @@ Extracting libxslt-1.1.32.tar.gz into tmp/x86_64-apple-darwin18.2.0/ports/libxsl
 Running 'configure' for libxslt 1.1.32... OK
 Running 'compile' for libxslt 1.1.32... OK
 Running 'install' for libxslt 1.1.32... OK
-Activating libxslt 1.1.32 (from /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ports/x86_64-apple-darwin18.2.0/libxslt/1.1.32)...
+Activating libxslt 1.1.32 (from /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ports/x86_64-apple-darwin18.2.0/libxslt/1.1.32)...
 checking for -llzma... yes
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
@@ -78,10 +78,10 @@ checking for xmlSchemaSetValidStructuredErrors()... yes
 checking for xmlSchemaSetParserStructuredErrors()... yes
 creating Makefile
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
 make "DESTDIR=" clean
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -123,9 +123,9 @@ compiling xml_xpath_context.c
 compiling xslt_stylesheet.c
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
-rm -rf /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri/tmp/x86_64-apple-darwin18.2.0/ports
-rm -rf /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ports
+rm -rf /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri/tmp/x86_64-apple-darwin18.2.0/ports
+rm -rf /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ports
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/nokogiri-1.9.1/ext/nokogiri
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20190101-81046-1b5xnno/nokogiri
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20190102-43594-pxdm8s/nokogiri

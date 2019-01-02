@@ -1,15 +1,15 @@
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
-/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190101-95920-1vdymmg.rb extconf.rb
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
+/Users/tokunagakazuki/.rbenv/versions/2.4.0/bin/ruby -I /Users/tokunagakazuki/.rbenv/versions/2.4.0/lib/ruby/site_ruby/2.4.0 -r ./siteconf20190102-43594-xgwmd2.rb extconf.rb
 creating Makefile
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
 make "DESTDIR=" clean
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
 make "DESTDIR="
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
-current directory: /Users/tokunagakazuki/Desktop/github/better/better-syukatsu/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
+current directory: /Users/tokunagakazuki/Desktop/github/posting-articles-app/vendor/bundle/ruby/2.4.0/gems/bootsnap-1.3.2/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190101-95920-11oxluj/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190102-43594-1n4mvd0/bootsnap
