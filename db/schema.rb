@@ -10,7 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_01_053400) do
+ActiveRecord::Schema.define(version: 2019_01_02_121623) do
+
+  create_table "addresses", force: :cascade do |t|
+    t.string "postal_code"
+    t.string "address_kana"
+    t.string "address"
+    t.string "building"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
+    t.string "family_name"
+    t.string "family_name_kana"
+    t.string "first_name"
+    t.string "first_name_kana"
+    t.date "birth_date"
+    t.integer "gender"
+    t.integer "phone"
+    t.string "bloodType"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
