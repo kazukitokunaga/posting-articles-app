@@ -7,9 +7,9 @@ import Care from '../pages/basicInformation/Care.vue'
 import EducationalBackground from '../pages/basicInformation/EducationalBackground.vue'
 import EmploymentHistory from '../pages/basicInformation/EmploymentHistory.vue'
 import PastAddress from '../pages/basicInformation/PastAddress.vue'
+import Profile from 'pages/basicInformation/Profile.vue'
 import Qualification from '../pages/basicInformation/Qualification.vue'
 import ThingsToTell from '../pages/basicInformation/ThingsToTell.vue'
-import UserProfile from 'pages/basicInformation/UserProfile.vue'
 // setting
 import Setting from 'pages/setting/Index.vue'
 
@@ -41,6 +41,11 @@ const routes = [
         name: 'pastaddress',
       },
       {
+        path: 'profile',
+        component: Profile,
+        name: 'profile',
+      },
+      {
         path: 'qualification',
         component: Qualification,
         name: 'qualification',
@@ -49,11 +54,6 @@ const routes = [
         path: 'thingstotell',
         component: ThingsToTell,
         name: 'thingstotell',
-      },
-      {
-        path: 'userprofile',
-        component: UserProfile,
-        name: 'userprofile',
       },
     ]
   },

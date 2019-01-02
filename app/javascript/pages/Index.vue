@@ -6,7 +6,7 @@
         <el-menu>
           <el-menu-item>
             <i class="el-icon-message"></i>
-            <router-link to="basicinformation/userprofile">ユーザープロフィール</router-link>
+            <router-link to="basicinformation/profile">基本情報</router-link>
           </el-menu-item>
           <el-menu-item>
             <i class="el-icon-menu"></i>
