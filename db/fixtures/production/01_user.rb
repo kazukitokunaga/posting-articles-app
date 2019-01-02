@@ -10,4 +10,4 @@ admin = User.seed(:id,
   password_confirmation: password,
 ).first
 admin.confirm
-admin.add_role :admin
+# admin.add_role :admin
