@@ -1,6 +1,6 @@
 <template>
   <div>
-    基本情報
+    過去の住所
   </div>
 </template>
 

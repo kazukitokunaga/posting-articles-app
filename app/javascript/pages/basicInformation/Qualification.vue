@@ -1,6 +1,6 @@
 <template>
   <div>
-    基本情報
+    資格
   </div>
 </template>
 
