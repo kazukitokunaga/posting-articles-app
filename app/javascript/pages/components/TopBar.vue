@@ -8,9 +8,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-import Vue from 'vue'
-
 export default {
   data() {
     return {
@@ -19,10 +16,6 @@ export default {
   computed: {
   },
   methods: {
-    async signOut(){
-      const response = await axios.delete('/users/sign_out')
-      location.reload()
-    }
   }
 }
 </script>

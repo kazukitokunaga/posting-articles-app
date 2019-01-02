@@ -4,7 +4,7 @@
 // to the head of your layout file,
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
-import 'regenerator-runtime/runtime'
+// import 'regenerator-runtime/runtime'
 import Vue from 'vue'
 import App from '../app.vue'
 import ElementUI      from 'element-ui'
