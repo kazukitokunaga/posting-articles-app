@@ -6,5 +6,5 @@ class User < ApplicationRecord
          :confirmable, :lockable, :timeoutable,
          :trackable, :trackable, :omniauthable
 
-  has_one :profile
+  has_one :profile, dependent: :destroy
 end
