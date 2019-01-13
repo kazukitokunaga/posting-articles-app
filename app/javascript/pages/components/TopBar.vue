@@ -8,6 +8,9 @@
 </template>
 
 <script>
+import axios from 'plugins/axios'
+import Vue from 'vue'
+
 export default {
   data() {
     return {

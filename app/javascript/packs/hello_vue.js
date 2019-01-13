@@ -11,6 +11,9 @@ import ElementUI      from 'element-ui'
 import router         from '../routers/router.js'
 import store          from '../store/index.js'
 import TopBar         from 'pages/components/TopBar.vue'
+import 'element-ui/lib/theme-chalk/index.css'
+import '../assets/stylesheets/element-ui-overwrite.sass'
+import '../assets/stylesheets/style.sass'
 
 Vue.use(ElementUI)
 Vue.component('TopBar', TopBar)

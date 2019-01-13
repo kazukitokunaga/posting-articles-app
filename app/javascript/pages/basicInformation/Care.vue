@@ -1,6 +1,6 @@
 <template>
   <div>
-    UserProfileページ
+    介護
   </div>
 </template>
 
