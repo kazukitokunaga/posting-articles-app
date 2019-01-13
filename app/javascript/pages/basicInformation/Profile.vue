@@ -40,35 +40,39 @@
     </section>
 
     <section>
-      <el-form ref="form" :model="profile.addressAttributes" label-width="150px">
+      <el-form ref="form" :model="profile.addressesAttributes" label-width="120px">
         <h2>住所</h2>
-        <el-form-item label="郵便番号">
-          <el-input type="number" class="-narrow" placeholder="郵便番号" v-model="profile.addressAttributes.postalCode"></el-input>
-        </el-form-item>
-        <el-form-item label="住所">
-          <el-input class="-wide" placeholder="住所" v-model="profile.addressAttributes.address"></el-input>
-        </el-form-item>
-        <el-form-item label="住所(カナ)">
-          <el-input class="-wide" placeholder="住所(カナ)" v-model="profile.addressAttributes.addressKana"></el-input>
-        </el-form-item>
-        <el-form-item label="マンション名">
-          <el-input class="-wide" placeholder="マンション名" v-model="profile.addressAttributes.building"></el-input>
-        </el-form-item>
+        <template v-for="address in profile.addressesAttributes">
+          <el-form-item label="郵便番号" :key="address.id">
+            <el-input type="number" class="-narrow" placeholder="郵便番号" v-model="address.postalCode"></el-input>
+          </el-form-item>
+          <el-form-item label="住所" :key="address.id">
+            <el-input class="-wide" placeholder="住所" v-model="address.address"></el-input>
+          </el-form-item>
+          <el-form-item label="住所(カナ)" :key="address.id">
+            <el-input class="-wide" placeholder="住所(カナ)" v-model="address.addressKana"></el-input>
+          </el-form-item>
+          <el-form-item label="マンション名" :key="address.id">
+            <el-input class="-wide" placeholder="マンション名" v-model="address.building"></el-input>
+          </el-form-item>
+        </template>
       </el-form>
-      <el-form class="domicile-form" ref="form" :model="profile.domicileAttributes" label-width="150px">
-        <h2>本籍</h2>
-        <el-form-item label="郵便番号">
-          <el-input type="number" class="-narrow" placeholder="郵便番号" v-model="profile.domicileAttributes.postalCode"></el-input>
-        </el-form-item>
-        <el-form-item label="住所">
-          <el-input class="-wide" placeholder="住所" v-model="profile.domicileAttributes.address"></el-input>
-        </el-form-item>
-        <el-form-item label="住所(カナ)">
-          <el-input class="-wide" placeholder="住所(カナ)" v-model="profile.domicileAttributes.addressKana"></el-input>
-        </el-form-item>
-        <el-form-item label="マンション名">
-          <el-input class="-wide" placeholder="マンション名" v-model="profile.domicileAttributes.building"></el-input>
-        </el-form-item>
+      <h2>本籍</h2>
+      <el-form ref="form" :model="profile.domicilesAttributes" label-width="120px">
+        <template v-for="domicile in profile.domicilesAttributes">
+          <el-form-item label="郵便番号" :key="domicile.id">
+            <el-input type="number" class="-narrow" placeholder="郵便番号" v-model="domicile.postalCode"></el-input>
+          </el-form-item>
+          <el-form-item label="住所" :key="domicile.id">
+            <el-input class="-wide" placeholder="住所" v-model="domicile.address"></el-input>
+          </el-form-item>
+          <el-form-item label="住所(カナ)" :key="domicile.id">
+            <el-input class="-wide" placeholder="住所(カナ)" v-model="domicile.addressKana"></el-input>
+          </el-form-item>
+          <el-form-item label="マンション名" :key="domicile.id">
+            <el-input class="-wide" placeholder="マンション名" v-model="domicile.building"></el-input>
+          </el-form-item>
+        </template>
       </el-form>
     </section>
     <el-button type="primary" @click="postForm">保存</el-button>
@@ -89,18 +93,22 @@
           gender:         '',
           phone:          '',
           bloodType:      '',
-          addressAttributes: {
-            postalCode:  '',
-            addressKana: '',
-            address:     '',
-            building:    '',
-          },
-          domicileAttributes: {
-            postalCode:  '',
-            addressKana: '',
-            address:     '',
-            building:    '',
-          },
+          addressesAttributes: [
+            {
+              postalCode:  '',
+              addressKana: '',
+              address:     '',
+              building:    '',
+            }
+          ],
+          domicilesAttributes: [
+            {
+              postalCode:  '',
+              addressKana: '',
+              address:     '',
+              building:    '',
+            }
+          ],
         },
         alert: {
           status:   '',
@@ -134,6 +142,10 @@
           this.alert.status = 'success'
         }
       },
+    },
+    async created () {
+      const response = await axios.get('/api/profiles')
+      this.profile = response.data
     },
   }
 </script>
